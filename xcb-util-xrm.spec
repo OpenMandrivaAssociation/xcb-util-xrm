@@ -14,6 +14,7 @@ Source0:	https://github.com/Airblader/xcb-util-xrm/releases/download/v%{version}
 
 BuildRequires:	pkgconfig(xcb-aux)
 BuildRequires:	pkgconfig(x11)
+BuildRequires:  pkgconfig(xorg-macros)
 
 %description
 %{summary}.
