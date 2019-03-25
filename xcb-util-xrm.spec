@@ -1,10 +1,12 @@
-%define major		0
-%define libname		%mklibname xcb-xrm %{major}
-%define develname	%mklibname xcb-xrm -d
+%define major 0
+%define libname %mklibname xcb-xrm %{major}
+%define develname %mklibname xcb-xrm -d
+
+%global optflags %{optflags} -O3
 
 Name:		xcb-util-xrm
 Version:	1.3
-Release:	1
+Release:	2
 Summary:	XCB utility functions for the X resource manager
 Group:		System/Libraries
 
@@ -35,7 +37,7 @@ Requires:	%{libname} = %{version}-%{release}
 %{summary}.
 
 %prep
-%autosetup
+%autosetup -p1
 
 %build
 autoreconf -vfi
