@@ -6,7 +6,7 @@
 
 Name:		xcb-util-xrm
 Version:	1.3
-Release:	2
+Release:	3
 Summary:	XCB utility functions for the X resource manager
 Group:		System/Libraries
 
