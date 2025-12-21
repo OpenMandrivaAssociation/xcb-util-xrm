@@ -14,6 +14,11 @@ License:	MIT
 URL:		https://github.com/Airblader/xcb-util-xrm
 Source0:	https://github.com/Airblader/xcb-util-xrm/releases/download/v%{version}/%{name}-%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(xcb-aux)
 BuildRequires:	pkgconfig(x11)
 BuildRequires:  pkgconfig(xorg-macros)
